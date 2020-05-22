@@ -8,8 +8,7 @@ LABEL maintainer="smarjancic"
 
 # Install packages
 RUN \
- apt-get update && \
- apk add --no-cache \
+ apk add --no-cache --upgrade \
          jq \
          wakeonlan \
          etherwake \
