@@ -17,7 +17,7 @@ RUN \
 # Add local files
 COPY root/ /
 
-COPY root/scripts/cron_health_check /etc/cron.d/cron_healthcheck
+COPY root/scripts/cron_healthcheck /etc/cron.d/cron_healthcheck
 
 # Apply cron job
 RUN crontab /etc/cron.d/cron_healthcheck
