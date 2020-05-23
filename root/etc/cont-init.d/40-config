@@ -2,6 +2,6 @@
 
 # permissions
 chown abc:abc \
-	/config \
-chown -R abc:abc  \
-	/scripts
+    /config
+chown -R abc:abc \
+    /scripts
