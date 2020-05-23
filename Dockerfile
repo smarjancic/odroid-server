@@ -1,5 +1,7 @@
 FROM lsiobase/alpine:arm32v7-3.11
 
+COPY qemu-arm-static /usr/bin
+
 # set version label
 ARG BUILD_DATE
 ARG VERSION
