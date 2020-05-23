@@ -10,7 +10,7 @@ LABEL maintainer="smarjancic"
 RUN \
  apk add --no-cache --upgrade \
          jq \
-         awake \
+         python3 \
          curl \
          nano \
          openssh-client \
