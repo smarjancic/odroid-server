@@ -13,6 +13,7 @@ RUN \
          awake \
          curl \
          nano \
+         ssh \
          sshpass
 
 # Add local files
