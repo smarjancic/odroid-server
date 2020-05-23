@@ -12,7 +12,8 @@ RUN \
          jq \
          awake \
          curl \
-         nano
+         nano \
+         sshpass
 
 # Add local files
 COPY root/ /

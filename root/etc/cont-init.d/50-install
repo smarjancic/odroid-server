@@ -4,7 +4,11 @@
 chmod +x /scripts/_healthcheck.sh
 chmod +x /scripts/run_healthcheck.sh
 chmod +x /scripts/cron_healthcheck
+chmod +x /scripts/server.py
 
 # init config
 [[ ! -f /config/healthcheck.json ]] && \
     cp /defaults/healthcheck.json /config/healthcheck.json
+	
+[[ ! -f /config/methods.json ]] && \
+    cp /defaults/methods.json /config/methods.json
