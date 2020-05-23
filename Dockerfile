@@ -19,7 +19,7 @@ RUN \
 # Add local files
 COPY root/ /
 
-COPY /scripts/cron_health_check /etc/cron.d/cron_health_check
+COPY root/scripts/cron_health_check /etc/cron.d/cron_health_check
 
 RUN chmod +x /scripts/health_check.sh
 RUN chmod +x /scripts/do_health_check.sh
