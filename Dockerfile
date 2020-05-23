@@ -11,7 +11,6 @@ RUN \
  apk add --no-cache --upgrade \
          jq \
          awake \
-         python \
          curl \
          nano
 
