@@ -1,9 +1,9 @@
 #!/usr/bin/with-contenv bash
 
 # install app
-RUN chmod +x /root/scripts/_healthcheck.sh
-RUN chmod +x /root/scripts/run_healthcheck.sh
-RUN chmod +x /root/scripts/cron_healthcheck
+RUN chmod +x /scripts/_healthcheck.sh
+RUN chmod +x /scripts/run_healthcheck.sh
+RUN chmod +x /scripts/cron_healthcheck
 
 # init config
 [[ ! -f /config/healthcheck.json ]] && \
