@@ -19,17 +19,17 @@ RUN \
 # Add local files
 COPY root/ /
 
-#COPY /scripts/cron_health_check /etc/cron.d/cron_health_check
+COPY /scripts/cron_health_check /etc/cron.d/cron_health_check
 
 RUN chmod +x /scripts/health_check.sh
 RUN chmod +x /scripts/do_health_check.sh
 RUN chmod +x /scripts/cron_health_check
 
 # Apply cron job
-#RUN crontab /etc/cron.d/cron_health_check
+RUN crontab /etc/cron.d/cron_health_check
 
 # Port and volumes
 VOLUME /config
 EXPOSE 80
 
-#CMD ["cron", "-f"]
+CMD ["cron", "-f"]
