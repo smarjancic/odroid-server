@@ -12,11 +12,9 @@ LABEL maintainer="smarjancic"
 RUN \
  apk add --no-cache --upgrade \
          jq \
-         wakeonlan \
-         etherwake \
+         awake \
          python \
-         curl \
-         cron
+         curl 
 
 # Add local files
 COPY root/ /
