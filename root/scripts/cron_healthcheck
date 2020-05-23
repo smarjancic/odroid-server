@@ -1,2 +1,2 @@
-0 * * * * /scripts/do_health_check.sh >/dev/null 2>&1
+0 * * * * /scripts/run_healthcheck.sh >/dev/null 2>&1
 # An empty line is required at the end of this file for a valid cron file.

@@ -1,0 +1,10 @@
+#!/usr/bin/with-contenv bash
+
+# install app
+RUN chmod +x /root/scripts/_healthcheck.sh
+RUN chmod +x /root/scripts/run_healthcheck.sh
+RUN chmod +x /root/scripts/cron_healthcheck
+
+# init config
+[[ ! -f /config/healthcheck.json ]] && \
+    cp /defaults/healthcheck.json /config/healthcheck.json
