@@ -12,6 +12,7 @@ RUN \
          jq \
          python3 \
          curl \
+         wget \
          nano \
          openssh-client \
          sshpass
