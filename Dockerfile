@@ -27,3 +27,5 @@ RUN crontab /etc/cron.d/cron_healthcheck
 # Port and volumes
 VOLUME /config
 EXPOSE 80
+
+CMD ["python3", "/scripts/server.py"]
