@@ -14,8 +14,7 @@ RUN \
          jq \
          awake \
          python \
-         curl \
-         bash
+         curl
 
 # Add local files
 COPY root/ /
@@ -32,5 +31,3 @@ RUN crontab /etc/cron.d/cron_health_check
 # Port and volumes
 VOLUME /config
 EXPOSE 80
-
-CMD ["cron", "-f"]

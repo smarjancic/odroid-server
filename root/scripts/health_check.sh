@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/with-contenv bash
 
 status_code=$(curl -s -o /dev/null -i -w "%{http_code}" $2)
 if [[ "$status_code" -ne 200 ]] ; then
