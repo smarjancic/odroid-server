@@ -14,7 +14,8 @@ RUN \
          jq \
          awake \
          python \
-         curl 
+         curl \
+         bash
 
 # Add local files
 COPY root/ /
