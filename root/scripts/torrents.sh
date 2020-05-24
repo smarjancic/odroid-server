@@ -13,7 +13,7 @@ get_torrentleech() {
   wget --load-cookies tlcookie.txt --keep-session-cookies --save-cookies tlcookie.txt --post-data "$cookieUrl" $seedUrl
 
   torrents=$(cat snatchlist | grep '{"sEcho": 1,' | sed 's|<[^>]*>||g' | jq -r --arg seedTime "$seedTime" '(.aaData | map(select(.[8]=="Yes") | select(.[9]|startswith($seedTime)) | .[0]))')
-  if [[ $torrents -ne 0]]; then
+  if [[ !  -z $torrents ]]; then
     printf "%s" "$torrents" > /config/temp/tlresult.json
   else
     jq -n '[]' > /config/temp/tlresult.json
