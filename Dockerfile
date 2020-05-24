@@ -20,10 +20,10 @@ RUN \
 # Add local files
 COPY root/ /
 
-COPY root/scripts/cron_healthcheck /etc/cron.d/cron_healthcheck
+COPY root/scripts/cron_execute /etc/cron.d/cron_execute
 
 # Apply cron job
-RUN crontab /etc/cron.d/cron_healthcheck
+RUN crontab /etc/cron.d/cron_execute
 
 # Port and volumes
 VOLUME /config
