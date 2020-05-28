@@ -1,2 +1,1 @@
  - Cron job executing healthchecks and updating healthchecks.io
- - Python server used for integration with IFTTT

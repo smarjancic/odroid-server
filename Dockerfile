@@ -10,12 +10,7 @@ LABEL maintainer="smarjancic"
 RUN \
  apk add --no-cache --upgrade \
          jq \
-         python3 \
-         curl \
-         wget \
-         nano \
-         openssh-client \
-         sshpass
+         curl
 
 # Add local files
 COPY root/ /
@@ -28,5 +23,3 @@ RUN crontab /etc/cron.d/cron_execute
 # Port and volumes
 VOLUME /config
 EXPOSE 80
-
-CMD ["python3", "/scripts/server.py"]
