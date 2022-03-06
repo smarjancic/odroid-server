@@ -1,4 +1,4 @@
-FROM lsiobase/alpine:arm64v8-3.13
+FROM lsiobase/alpine:arm64v8-edge
 
 # set version label
 ARG BUILD_DATE
