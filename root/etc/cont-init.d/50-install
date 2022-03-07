@@ -1,4 +1,4 @@
-#!/usr/bin/with-contenv bash
+#!/bin/bash
 
 # install app
 chmod +x /scripts/run_healthcheck.sh

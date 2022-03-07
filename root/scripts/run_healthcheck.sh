@@ -1,4 +1,4 @@
-#!/usr/bin/with-contenv bash
+#!/bin/bash
 
 do_healthcheck() {
   if  [[ $2 = http* ]] ; then
